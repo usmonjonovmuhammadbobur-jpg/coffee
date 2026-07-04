@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* fraunces-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/fraunces-v38-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* fraunces-900 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/fraunces-v38-latin-900.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* barlow-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/barlow-v13-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 43px 0 43px;
+}
+
+.header__nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav-item {
+    margin-right: 33px;
+}
+
+.header__nav-link {
+    font-family: 'Barlow';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.92px;
+    text-transform: uppercase;
+    color: rgba(131, 136, 143, 1);
+}
+
+.header__nav-link:hover {
+    color: rgba(51, 61, 75, 1);
+}
+
+
+.intro-container {
+    background-image: url(../img/intro-bg-coffee.jpg);
+    height: 600px;
+    background-size: cover;
+    border-radius: 10px;
+    margin-bottom: 136px;
+}
+
+.intro__box-title {
+    font-family: 'Fraunces 9pt';
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: 0px;
+    color: #fff;
+    padding: 117px 702px 0 25px;
+}
+
+.intro__box-text {
+    font-family: 'Barlow';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    color: rgba(254, 252, 247, 1);
+    width: 445px;
+    padding: 25px;
+    opacity: 0.6;
+    margin-bottom: 31px;
+}
+
+.intro__box-link {
+    background-color: rgba(14, 135, 132, 1) ;
+    width: 217;
+    height: 56;
+    opacity: 1;
+    border-radius: 6px;
+    color: #fff;
+    padding: 15px 31px 16px 31px;
+    margin-left: 20px;
+    font-family:'Fraunces 9pt';
+    font-weight: 900;
+}
+.intro__box-link:hover{
+    background-color: rgb(56, 90, 56);
+}
