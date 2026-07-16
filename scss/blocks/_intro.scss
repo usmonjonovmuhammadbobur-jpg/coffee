@@ -1,0 +1,48 @@
+.intro-container {
+    background-image: url(../img/intro-bg-coffee.jpg);
+    height: 600px;
+    background-size: cover;
+    border-radius: 10px;
+    margin-bottom: 136px;
+}
+
+.intro__box-slogan {
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: 0px;
+    color: #fff;
+    padding: 117px 602px 0 25px;
+
+}
+
+.intro__box-text {
+    font-family: 'Barlow';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    color: rgba(254, 252, 247, 1);
+    width: 445px;
+    padding: 25px;
+    opacity: 0.6;
+    margin-bottom: 31px;
+}
+
+.intro__box-link {
+    background-color: rgba(14, 135, 132, 1) ;
+    width: 217;
+    height: 56;
+    opacity: 1;
+    border-radius: 6px;
+    color: #fff;
+    padding: 15px 31px 16px 31px;
+    margin-left: 20px;
+    font-family:'Fraunces';
+    font-weight: 900;
+    border: 1px solid lightblue;
+}
+.intro__box-link:hover{
+    background-color: rgb(102, 210, 207, 1);
+}
