@@ -1,6 +1,6 @@
 const hamburger = document.querySelector(".hamburger")
-const nav = document.querySelector(".header__mobile-nav")
+const nav = document.querySelector(".nav__mobile")
 hamburger.addEventListener("click" , function (evt){
     hamburger.classList.toggle("hamburger--closed")
-    nav.classList.toggle("header__nav-mobile--active")
+    nav.classList.toggle("nav__mobile--active")
 })

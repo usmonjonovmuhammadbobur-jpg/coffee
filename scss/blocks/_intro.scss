@@ -1,48 +1,67 @@
-.intro-container {
-    background-image: url(../img/intro-bg-coffee.jpg);
-    height: 600px;
+.intro {
+    margin-bottom: 136px;
+    margin-top: 116px;
+}
+
+.intro__container {
+    padding-top: 117px;
+    padding-bottom: 117px;
+    background: url(../../img/intro-bg-coffee.jpg) no-repeat center center;
     background-size: cover;
     border-radius: 10px;
-    margin-bottom: 136px;
 }
 
-.intro__box-slogan {
-    font-family: 'Fraunces';
-    font-weight: 900;
-    font-size: 72px;
-    line-height: 72px;
-    letter-spacing: 0px;
-    color: #fff;
-    padding: 117px 602px 0 25px;
+.intro__box {
+    max-width: 493px;
 
 }
 
-.intro__box-text {
-    font-family: 'Barlow';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 0px;
-    color: rgba(254, 252, 247, 1);
-    width: 445px;
-    padding: 25px;
+.intro__slogan {
+    @include fraunces72("light");
+    margin-bottom: 32px;
+}
+
+.intro__text {
+    @include textBarlow("light");
     opacity: 0.6;
-    margin-bottom: 31px;
+    margin-bottom: 71px;
 }
 
-.intro__box-link {
-    background-color: rgba(14, 135, 132, 1) ;
-    width: 217;
-    height: 56;
-    opacity: 1;
-    border-radius: 6px;
-    color: #fff;
-    padding: 15px 31px 16px 31px;
-    margin-left: 20px;
-    font-family:'Fraunces';
-    font-weight: 900;
-    border: 1px solid lightblue;
+@media only screen and (max-width:$tablet) {
+    .intro__container {
+        padding: 104px 58px;
+        margin: 0 40px;
+    }
+
+    .intro__box {
+        max-width: 398px;
+    }
+
+    .intro__slogan {
+        @include title48("light")
+    }
+
+    .intro__text {
+        font-size: 15px;
+    }
 }
-.intro__box-link:hover{
-    background-color: rgb(102, 210, 207, 1);
+
+@media only screen and (max-width:$mobile) {
+    .intro__container {
+        padding: 100px 24px;
+    }
+
+    .intro__container {
+        margin: 0 24px;
+    }
+
+    .intro__box {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .intro__slogan {
+        @include title40("light");
+        margin-bottom: 24px;
+    }
 }
